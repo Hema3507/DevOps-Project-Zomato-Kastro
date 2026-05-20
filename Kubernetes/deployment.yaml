@@ -5,7 +5,7 @@ metadata:
   labels:
     app: zomato
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: zomato
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: zomato
-        image: kastrov/zomato:latest
+        image: 322113025631.dkr.ecr.ap-south-1.amazonaws.com/food-delivery-app:latest
         ports:
         - containerPort: 3000
