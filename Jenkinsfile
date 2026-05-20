@@ -10,7 +10,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git branch: 'main',
+                git branch: 'master',
                 url: 'https://github.com/Hema3507/DevOps-Project-Zomato-Kastro.git'
             }
         }
